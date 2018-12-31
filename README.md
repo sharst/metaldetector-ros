@@ -46,3 +46,16 @@ The config file allows to map each register to a topic. Consequently, the next k
 Additionally, since we used the VALUEs in the payload to encode strictly UINTs, you can specify pre-offset, scale, and offset parameters to compute a float. The can bridge will internally do the following calculation before publishing to the topic:
 ```return_val = (value + pre_offset) * scale + offset```
 If you did not specify those values in the config, it will assume pre_offset = offset = 0 and scale = 1, i.e. do nothing.
+
+It also works the other way round: In send_config.yaml you can specify that you would like to have all info that is published on a topic to be relayed to the CAN bus. 
+```
+# Metaldetector                                                                                                    
+62:                                                                                                                
+  8:                                                                                                               
+    topic: commands/enable_coils
+```
+The mapping in the config file is equal. For the metaldetector, you can write a std_msgs/Int32 value: 0 to commands/enable_coils to send a message with an encoded 0 to register 8 on device 62, which should switch off the coils there.
+
+## Decoding the values of the metaldetector
+Since the values coming from the metaldetector are still encoded in a 4-byte payload, we need to decode them before we can use them. With the canbridge running (see above), do a rosrun metaldetector_ros metalnode.
+You will then receive decoded values on the topic "metal_detector".
