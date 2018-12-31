@@ -59,3 +59,7 @@ The mapping in the config file is equal. For the metaldetector, you can write a 
 ## Decoding the values of the metaldetector
 Since the values coming from the metaldetector are still encoded in a 4-byte payload, we need to decode them before we can use them. With the canbridge running (see above), do a rosrun metaldetector_ros metalnode.
 You will then receive decoded values on the topic "metal_detector".
+
+
+## Information flow from the metaldetector-shield
+![Information flow from the metaldetector-shield](https://github.com/sharst/metaldetector-shield/blob/master/images/data-transfer.png)
