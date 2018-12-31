@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>metaldetector_ros</name>
+  <version>0.0.1</version>
+  <description>Provides nodes to convert messages from SocketCAN to a ROS Topic and vice versa.</description>
+
+  <maintainer email="mathias.luedtke@ipa.fraunhofer.de">Mathias Lüdtke</maintainer>
+  <author email="ivor@iwanders.net">Ivor Wanders</author>
+  <author>Simon Harst</author>
+
+  <license>BSD</license>
+
+  <!-- Forked from: -->
+  <url type="website">http://wiki.ros.org/socketcan_bridge</url>
+  <url type="repository">https://github.com/ros-industrial/ros_canopen</url>
+  <url type="bugtracker">https://github.com/ros-industrial/ros_canopen/issues</url>
+
+  <!-- Fork residing in: -->
+  <url type="repository">https://github.com/sharst/metaldetector-ros</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <depend>can_msgs</depend>
+  <depend>roscpp</depend>
+  <depend>socketcan_interface</depend>
+  <depend>roslib</depend>
+  <depend>std_msgs</depend>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+
+</package>

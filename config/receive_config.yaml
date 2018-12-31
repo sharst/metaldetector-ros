@@ -1,0 +1,19 @@
+# Metal detector
+61:
+  1:
+    topic: raw/metal_0
+  3:
+    topic: raw/metal_2
+  5:
+    topic: raw/metal_4
+  7:
+    topic: raw/metal_6
+  9:
+    topic: raw/metal_8
+  11:
+    topic: raw/metal_10
+  30:
+    topic: sensors/pressure_heartbeat
+  25:
+    topic: sensors/pressure_bumper
+
