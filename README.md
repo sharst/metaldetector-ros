@@ -1,7 +1,7 @@
 # metaldetector-ros
 A ROS driver for the metaldetector shield.
 Initially this was a node to give a common CAN interface to ROS in a robotic system. It has been somewhat trimmed down to support CAN messages from the metaldetector shield [https://github.com/sharst/metaldetector-shield](https://github.com/sharst/metaldetector-shield). 
-This has been forked from the eccellent [socketcan_bridge inside canopen](https://github.com/ros-industrial/ros_canopen/tree/melodic-devel/socketcan_bridge). 
+This has been forked from the excellent [socketcan_bridge inside canopen](https://github.com/ros-industrial/ros_canopen/tree/melodic-devel/socketcan_bridge). 
 
 We have run this node in combination with the USBtin.
 Please follow this guide to get it set up with socketcan: https://www.fischl.de/usbtin/linux_can_socketcan/
