@@ -1,5 +1,0 @@
-<launch>
-  <node pkg="metaldetector_ros" type="socketcan_bridge_node" name="canbridge" output="screen" respawn="true">
-    <rosparam param="can_device">slcan0</rosparam>
-  </node>
-</launch>

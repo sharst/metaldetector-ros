@@ -1,12 +1,11 @@
 #!/usr/bin/python
 
 import rospy
-from metaldetector_ros.MetalInterpreter import MetalInterpreter
+from metaldetector_ros.MetalDetector import MetaldetectorNode
 
-rospy.init_node("metalnode")
+rospy.init_node("metaldetectornode")
 
-mi = MetalInterpreter()
+md = MetaldetectorNode()
 
 while not rospy.is_shutdown():
   rospy.spin()
-
